@@ -31,4 +31,37 @@ Spark MLlib | Enables development of *machine learning* applications | Scala Jav
 Spark GraphX | Enables graph processing and supports a growing library of graph algorithms | Scala
 
 
+Deployment
+----------
+
+Spark can be deployed in:
+  - **standalone mode** on a single node. 
+  - in a **cluster** on:
+    - [Hadoop YARN](https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html)
+    - [Apache Mesos](http://mesos.apache.org/) 
+  - in cloud infrastructure, like:
+    - [AWS EMR](https://aws.amazon.com/emr/) 
+    - [Google Dataproc](https://cloud.google.com/dataproc/).
+
+
+Data stores
+-----------
+
+Spark can access data from a huge variety of data storages, like:
+
+  - HDFS
+  - Apache Cassandra
+  - HBase
+  - Hive
+  - ...
+
+
+Application Fundamentals
+------------------------
+
+In distributed applications is common to have **one driver programm** that control the execution and **N worker nodes**.
+
+Driver program allocates task to the workers. In a Spark  application the `SparkContext` object is the driver program and it communicates with the cluster manager to run the tasks. It submits the *Spark jobs* to the nodes.
+
+
 [logo]: ./images/spark-stack.png "Apache Spark stack"
