@@ -21,7 +21,7 @@ And also it has a **REPL** (Read, Evaluate, Print and Loop) CLI interface.
 
 The main Spark component is the **Apache Spark Core**, core processing engine. It's the one which is able to deal with distrubuted task. In addition, Spark comes with a stack of domain specific libraries for big data processing needs.
 
-![alt text][logo]
+![spark-stack][spark-stack]
 
 Library | Usage | Supported languages  
 --- | --- | --- |
@@ -64,4 +64,4 @@ In distributed applications is common to have **one driver programm** that contr
 Driver program allocates task to the workers. In a Spark  application the `SparkContext` object is the driver program and it communicates with the cluster manager to run the tasks. It submits the *Spark jobs* to the nodes.
 
 
-[logo]: ./images/spark-stack.png "Apache Spark stack"
+[spark-stack]: ./images/spark-stack.png "Apache Spark stack"
