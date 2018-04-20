@@ -6,6 +6,30 @@ This repo is about learning Spark.
 
 There is a page with [glossary][] of terms.
 
+Exercises and examples
+----------------------
+
+### Word Count
+
+[WordCount](./src/scala/WordCount.scala) is the first Scala example that counts the words of a this file (the project's README.md).
+
+```
+val textFile   = sc.textFile("README.md")
+val wordCounts = { textFile
+                    .flatMap(line => line.split(" "))
+                    .map(word => (word, 1))
+                    .reduceByKey((a, b) => a + b)
+                 }
+wordCounts.collect();
+System.exit(0);
+```
+
+To run this script, from project root:
+
+```
+$ [spark-root]/bin/spark-shell -i src/scala/WordCount.scala
+```
+
 Resources
 ---------
 
