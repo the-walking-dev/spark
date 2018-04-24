@@ -1,2 +1,7 @@
+# Spark things
+derby.log
+metastore_db/
+
+# visual studio 
 .vscode/
 .DS_Store
