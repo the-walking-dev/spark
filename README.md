@@ -6,6 +6,14 @@ This repo is about learning Spark.
 
 There is a page with [glossary][] of terms.
 
+
+Documentation
+-------------
+
+  - [intro](./doc/intro.md), an introduction to Spark.
+  - [management](./doc/management.md), about how to start/stop a Spark cluster.
+
+
 Exercises and examples
 ----------------------
 
