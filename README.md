@@ -19,7 +19,7 @@ Exercises and examples
 
 ### Word Count
 
-[WordCount](./src/scala/WordCount.scala) is the first Scala example that counts the words of a this file (the project's README.md).
+[WordCount](./src/main/scala/WordCount.scala) is the first Scala example that counts the words of a this file (the project's README.md).
 
 ```
 val textFile   = sc.textFile("README.md")
@@ -35,8 +35,17 @@ System.exit(0);
 To run this script, from project root:
 
 ```
-$ [spark-root]/bin/spark-shell -i src/scala/WordCount.scala
+$ [spark-root]/bin/spark-shell -i src/main/scala/wordcount/WordCount.scala
 ```
+
+### NBA
+
+There are different samples with NBA data. For example:
+
+```
+$ [spark-root]/bin/spark-shell -i src/main/scala/nba/DraftNumberOne.scala
+```
+
 
 Resources
 ---------
